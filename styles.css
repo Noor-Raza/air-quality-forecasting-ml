@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Container Styling: Ensures that all content is within a max-width and has margins */
+.container {
+    width: 90%;         /* Container width */
+    max-width: 1200px;  /* Max width to prevent stretching */
+    margin: 0 auto;     /* Centers the content horizontally */
+    padding: 20px;      /* Adds space inside the container */
+}
+
+/* Header Styling */
+header {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Image Section Styling */
+#barcelona-picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#barcelona-image {
+    width: 100%;         /* Ensures the image spans the full width */
+    height: auto;        /* Maintains the image's aspect ratio */
+    max-height: 400px;   /* Controls maximum height */
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Space between form elements */
+    margin-top: 20px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+button {
+    background-color: #0073e6;
+    color: white;
+    font-size: 1rem;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Results Section Styling */
+.results {
+    background-color: white;
+    padding: 1.5rem;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.results p {
+    font-size: 1.1rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #barcelona-image {
+        max-height: 200px;
+    }
+
+    .form-container, .results {
+        padding: 1rem;
+    }
+
+    input, button {
+        width: 100%;
+        max-width: 100%;
+    }
+}
